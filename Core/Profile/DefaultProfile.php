@@ -4,6 +4,7 @@ namespace Aliyun\Core\Profile;
 
 use Aliyun\Core\Auth\Credential;
 use Aliyun\Core\Auth\ShaHmac1Signer;
+use Aliyun\Core\Config;
 use Aliyun\Core\Regions\ProductDomain;
 use Aliyun\Core\Regions\Endpoint;
 use Aliyun\Core\Regions\EndpointProvider;
@@ -135,3 +136,4 @@ class DefaultProfile implements IClientProfile
 	}
 
 }
+Config::load();
